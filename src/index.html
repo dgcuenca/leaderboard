@@ -9,7 +9,27 @@
 </head>
 
 <body>
-
+    <header>Leaderboard</header>
+    <div class="containerMain">
+        <section class="containerScores">
+            <div class="layoutScores">
+                <h2>Recent scores</h2>
+                <div class="containerButtonRefresh">
+                    <button type="button" id="btnRefresh">Refresh</button>
+                </div>
+            <div id="score-container"></div>
+        </section>
+        <section class="containerAdd">
+            <h2>Add your score</h2>
+            <form>
+                <input type="text" id="name" placeholder="Your name">
+                <input type="text" id="score" placeholder="Your score">
+                <div class="containerButtonSubmit">
+                    <button type="submit" id="btnAdd">Submit</button>
+                </div>
+            </form>
+        </section>
+    </div>
 </body>
 
 </html>

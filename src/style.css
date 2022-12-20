@@ -1,0 +1,65 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 7%;
+}
+
+header {
+    font-size: 6rem;
+}
+.containerMain {
+    display: flex;
+}
+
+section {
+    width: 50%;
+}
+
+.containerScores {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+    margin-top: 3rem;
+}
+
+.layoutScores {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.containerButtonRefresh {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerAdd {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    padding-right: 30%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.containerButtonSubmit {
+    display: flex;
+}
+
+#btnAdd {
+    margin-left: auto;
+}
+
+h2 {
+    font-size: 4rem;
+}
