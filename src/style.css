@@ -5,7 +5,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  padding: 3% 2%;
+  padding: 3% 2% 10% 2%;
   background-color: white;
   background-color: rgb(130, 206, 181);
 }
@@ -52,6 +52,13 @@ section {
   padding: 0.5rem 0.7rem;
 }
 
+.black {
+  background-color: rgb(70, 167, 167);
+}
+
+.white {
+  background-color: rgb(22, 219, 160);
+}
 .containerAdd {
   margin-top: 2rem;
   display: flex;
@@ -78,6 +85,7 @@ form {
   display: flex;
 }
 
+
 #btnAdd {
   margin-left: auto;
   border: none;
@@ -98,4 +106,10 @@ input {
 
 input::placeholder {
   color: rgb(102, 170, 179);
+}
+
+li {
+  list-style: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.2rem;
 }
