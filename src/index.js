@@ -18,7 +18,13 @@ const requestLeaderboard = async (url) => {
 btnAdd.addEventListener('click', (event) => {
   event.preventDefault();
   if (name.value && score.value) {
-    addScore('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/PaP8nHWYVL0mOujbpMVo/scores/', name.value, score.value);
+    if (score.value >100 || score.value <0){
+      alert('Insert a score between 0 and 100 ')
+    } else  if (name.value.length > 10 ){
+      alert('Max lengths allowed is 10 characters')
+    } else {
+      addScore('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AVnMJkFX9INRzoJZINOZ/scores/', name.value, score.value);
+    }
   } else if (name.value || score.value) {
     if (!name.value) {
       alertName.style.display = 'flex';
@@ -34,7 +40,7 @@ btnAdd.addEventListener('click', (event) => {
 });
 
 btnRefresh.addEventListener('click', () => {
-  requestLeaderboard('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/PaP8nHWYVL0mOujbpMVo/scores/')
+  requestLeaderboard('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AVnMJkFX9INRzoJZINOZ/scores/')
     .then((leaderboard) => {
       scoreContainer.innerHTML = display(leaderboard.result);
     });
