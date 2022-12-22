@@ -1,5 +1,4 @@
 import './style.css';
-import Score from '../modules/scoreClass.js';
 import display from '../modules/add.js';
 
 const btnAdd = document.getElementById('btnAdd');
@@ -24,20 +23,24 @@ const scoreContainer = document.getElementById('score-container');
 //     console.log(gameid);
 //   });
 
-btnAdd.addEventListener('click', (event) => {
-  event.preventDefault();
-  fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/PaP8nHWYVL0mOujbpMVo/scores/', {
+const addScore = async (url, name, score) => {
+  const response = await fetch(url, {
     method: 'POST',
     body: JSON.stringify({
-      "user": `"${name.value}"`,
-      "score": `${score.value}`
+      "user": `"${name}"`,
+      "score": `${score}`
     }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
   })
-    .then((response) => response.json())
-    .then((gamecreated) => { console.log(gamecreated) });
+  return response.json();
+} 
+
+
+btnAdd.addEventListener('click', (event) => {
+  event.preventDefault();
+  addScore('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/PaP8nHWYVL0mOujbpMVo/scores/',name.value,score.value )
 });
 
 btnRefresh.addEventListener('click', () => {
