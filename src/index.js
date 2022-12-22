@@ -1,5 +1,6 @@
 import './style.css';
 import display from '../modules/add.js';
+import addScore from '../modules/addScore.js'
 
 const btnAdd = document.getElementById('btnAdd');
 const btnRefresh = document.getElementById('btnRefresh');
@@ -22,20 +23,6 @@ const scoreContainer = document.getElementById('score-container');
 //     // idgame = gameid;
 //     console.log(gameid);
 //   });
-
-const addScore = async (url, name, score) => {
-  const response = await fetch(url, {
-    method: 'POST',
-    body: JSON.stringify({
-      "user": `"${name}"`,
-      "score": `${score}`
-    }),
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-  })
-  return response.json();
-} 
 
 const requestLeaderboard = async (url) => {
   const response = await fetch(url)
