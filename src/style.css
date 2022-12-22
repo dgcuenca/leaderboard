@@ -64,6 +64,16 @@ form {
   gap: 2rem;
 }
 
+.alert-name,
+.alert-score {
+  color: red;
+  margin-left: auto;
+  margin-top: -1.8rem;
+  font-size: 1.4rem;
+  display: none;
+  
+}
+
 .containerButtonSubmit {
   display: flex;
 }

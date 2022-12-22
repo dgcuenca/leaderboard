@@ -7,6 +7,8 @@ const btnRefresh = document.getElementById('btnRefresh');
 const name = document.getElementById('name');
 const score = document.getElementById('score');
 const scoreContainer = document.getElementById('score-container');
+const alertName = document.querySelector('.alert-name');
+const alertScore = document.querySelector('.alert-score');
 
 const requestLeaderboard = async (url) => {
   const response = await fetch(url);
@@ -18,9 +20,16 @@ btnAdd.addEventListener('click', (event) => {
   if (name.value && score.value) {
     addScore('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/PaP8nHWYVL0mOujbpMVo/scores/', name.value, score.value);
   } else if (name.value || score.value) {
-    name.value ? alert('Insert Score') : alert('Inser Name');
+    if (!name.value) {
+      alertName.style.display = 'flex';
+      alertScore.style.display = 'none';
+    } else {
+      alertName.style.display = 'none';
+      alertScore.style.display = 'flex';
+    }
   } else {
-    alert ('Insert Name and Score')
+    alertName.style.display = 'flex';
+    alertScore.style.display = 'flex';
   }
 });
 
