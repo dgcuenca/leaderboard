@@ -48,7 +48,7 @@ section {
 #btnRefresh {
   border: none;
   border-radius: 10%;
-  background-color: rgb(130, 206, 181) ;
+  background-color: rgb(130, 206, 181);
   padding: 0.5rem 0.7rem;
 }
 
@@ -59,6 +59,7 @@ section {
 .white {
   background-color: rgb(22, 219, 160);
 }
+
 .containerAdd {
   margin-top: 2rem;
   display: flex;
@@ -78,19 +79,24 @@ form {
   margin-top: -1.8rem;
   font-size: 1.4rem;
   display: none;
-  
 }
 
 .containerButtonSubmit {
   display: flex;
 }
 
+.alert-range,
+.alert-maxlength {
+  color: red;
+  font-size: 1.4rem;
+  display: none;
+}
 
 #btnAdd {
   margin-left: auto;
   border: none;
   border-radius: 10%;
-  background-color: rgb(130, 206, 181) ;
+  background-color: rgb(130, 206, 181);
   padding: 0.5rem 0.7rem;
 }
 
