@@ -37,6 +37,10 @@ const addScore = async (url, name, score) => {
   return response.json();
 } 
 
+const requestLeaderboard = async (url) => {
+  const response = await fetch(url)
+  return response.json();
+}
 
 btnAdd.addEventListener('click', (event) => {
   event.preventDefault();
@@ -44,8 +48,7 @@ btnAdd.addEventListener('click', (event) => {
 });
 
 btnRefresh.addEventListener('click', () => {
-  fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/PaP8nHWYVL0mOujbpMVo/scores/')
-  .then((response) => response.json())
+  requestLeaderboard('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/PaP8nHWYVL0mOujbpMVo/scores/')
   .then((leaderboard) => {
     scoreContainer.innerHTML = display(leaderboard.result);
   });
