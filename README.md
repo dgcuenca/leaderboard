@@ -44,9 +44,8 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://html.spec.whatwg.org/multipage/">HTML</a></li>
-    <li><a href="https://sass-lang.com/">Sass</a></li>
-    <li><a href="https://www.javascript.com/">JavaScript Modules</a></li>
+    <li><a href="https://html.spec.whatwg.org/multipage/">Webpack</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript async and await</a></li>
   </ul>
 </details>
 
@@ -68,9 +67,8 @@
 
 > Describe between 1-3 key features of the application.
 
-- **[Use of javascript modules to show a website]**
-- **[add_a_book]**
-- **[erase_a_book]**
+- **[Add a new score]**
+- **[See table of leaderboard]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -78,7 +76,7 @@
 
 > Link to deployed project.
 
-- [Watch it in action](https://dgcuenca.github.io/ToDoList/)
+- [Watch it in action]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,8 +131,8 @@ You can deploy this project using:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[Improve UX experience]**
-- [ ] **[Clean refactored code]**
+- [ ] **[na]**
+- [ ] **[na]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
