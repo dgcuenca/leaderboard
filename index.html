@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <script src="./index.js" defer></script>
+<script defer src="bundle.js"></script></head>
+
+<body>
+    <header>Leaderboard</header>
+    <div class="containerMain">
+        <section class="containerScores">
+            <div class="layoutScores">
+                <h2>Recent scores</h2>
+                <div class="containerButtonRefresh">
+                    <button type="button" id="btnRefresh">Refresh</button>
+                </div>
+            </div>
+            <div id="score-container"></div>
+        </section>
+        <section class="containerAdd">
+            <h2>Add your score</h2>
+            <form>
+                <input type="text" id="name" placeholder="Your name" required>
+                <div class="alert-name">* Provide a user name</div> 
+                <input type="number" id="score" placeholder="Your score" required>
+                <div class="alert-score">* Provide a score</div>
+                <div class="containerButtonSubmit">
+                    <button type="submit" id="btnAdd">Submit</button>
+                    <div class="alert-range">* Insert a score between 0 and 100 </div>
+                    <div class="alert-maxlength">* Max lengths allowed is 10 characters</div>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
