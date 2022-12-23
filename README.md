@@ -76,7 +76,7 @@
 
 > Link to deployed project.
 
-- [Watch it in action]()
+- [Watch it in action](https://dgcuenca.github.io/leaderboard/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
